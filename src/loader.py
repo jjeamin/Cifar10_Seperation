@@ -140,8 +140,8 @@ class Custom_Binary_CIFAR10(object):
         self.labels = []
         self.transformer = transformer
 
-        for i, cls in enumerate(class_names):
-            class_path = get_class_path(root_path, dtype, cls)
+        for i, name in enumerate(class_names):
+            class_path = get_class_path(root_path, dtype, name)
 
             self.img_path += class_path
 
